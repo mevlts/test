@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+
 public class RestController1 {
 
     @RequestMapping("hello/{ad}")
-    public String  metod(@PathVariable String  ad) {
+    public String  metod(@PathVariable String ad) {
         return "Hello " + ad;
     }
 }
